@@ -1,6 +1,8 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import JSONResponse, HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
+
 
 from typing import List
 
@@ -12,6 +14,9 @@ from tensorflow.keras.models import load_model
 model = load_model('./model/model.keras')
 
 app = FastAPI()
+origins = [ "http://localhost", "http://localhost:4200" ]
+
+app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 app.mount("/public", StaticFiles(directory="./public"), name="public")
 
