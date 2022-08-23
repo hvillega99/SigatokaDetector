@@ -42,7 +42,8 @@ async def predict(files:List[UploadFile] = File(...)):
         y = model.predict(images)
 
         for i in range(len(y)):
-            result[files[i].filename] = str(y[i][0])
+            label = 'sigatoka' if y[i][0] > 0.5 else 'sana'
+            result[files[i].filename] = label
 
         return JSONResponse(content=result)
     except print(0):
