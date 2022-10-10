@@ -1,0 +1,61 @@
+<nav class="navbar navbar-light bg-success">
+    <div class="container-fluid letraT">
+      <span class="navbar-brand mb-0 h1 text-light" >Detector de sigatoka negra</span>
+    </div>
+</nav>
+<p class="le"><b>Seleccione una o varias imágenes de hojas de banano para determinar si tienen o no sigatoka negra</b></p>
+<div class="a" *ngIf="imaganesF.length==0">
+  <div class="body">
+    <button type="file" class="contenedor-btn-file bg-success">
+        Seleccionar imágenes
+      <label for="mi"></label>    
+      <input accept="image/*" (change)="onFileSelected($event)" multiple type="file" id="mi">       
+    </button>  
+  </div>
+</div>
+
+<div class="a" *ngIf="imaganesF.length>0">
+  <div class="bodyS">
+    <div class="card" style="width: 112px; height: 205px;" *ngFor="let imag of imaganesF">
+      <img src={{imag.url}} class="card-img-top" alt="..." style="width: 100%; height:100%;">
+      <div class="eli">
+        <button (click)="delete(imag.name)" class="butt"><b>X</b></button>
+      </div>
+    </div>
+    <button type="file" class="contenedor-btn-files bg-success" *ngIf="imagenPrevia.length>0">
+      +
+    <label for="mi"></label>    
+    <input accept="image/*" (change)="onFileSelected($event)" multiple type="file" id="mi">
+    </button>
+  </div>
+    <a href="#load" style="text-decoration:none"><button class="btn bg-success btnpro" (click)="loadImages()">Procesar</button> </a>
+</div>
+<button class="eliAll bg-success text-light" (click)="deleteAll()">Limpiar</button>
+
+<div class="text-center" *ngIf="aparecer" id="load" >
+  <b><p>Estamos analizando las hojas, espere un momento.</p></b>
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<div class="bodyss">
+  <h1 class="titulo" *ngIf="resultadosF.length>0"><b>Resultados del análisis</b></h1>
+<div class="resultados" *ngIf="resultadosF.length>0">
+  
+  <div class="card cartaa" style="width: 200px;" *ngFor="let resu of resultadosF">
+    <div class="card-header cabe">
+      <b>Predicción:</b> {{resu.prediccion}}
+    </div>
+    <div class="card-body" style="padding: 0; height: 233px;">
+      <img src={{resu.url}} alt="" style="width: 100%; height: 100%;">
+    </div>
+  </div>
+</div>
+</div>
+<!-- <footer class="bg-success text-center text-lg-start footer">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-light" href="">IAGroup</a>
+    </div>
+</footer> -->

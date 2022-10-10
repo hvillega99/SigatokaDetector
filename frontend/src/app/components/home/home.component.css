@@ -1,0 +1,227 @@
+.navbar{
+    box-shadow: 0px 0px 10px rgb(14, 231, 90);;
+}
+.titulo{
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.dimension{
+    background-color: transparent;
+    border-style: dashed;
+    border-radius: 10px;
+    width: 230px;       
+    height: 230px;
+    position: absolute;
+    top:45%;
+    left: 50%;           
+    margin-top: -100px;
+    margin-left: -114px;
+}
+.dimension2{
+    background-color: rgb(215, 219, 219);
+    border-radius: 10px;
+    width: 224px;       
+    height: 222px;
+    position: absolute;
+    top:45%;
+    left: 51%;           
+    margin-top: -100px;
+    margin-left: -114px;
+}
+.letras{
+    position: absolute;
+    top:64%;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    
+}
+.letraT{
+    text-align: center;
+    justify-content: center;
+}
+.contenedor-btn-file input[type="file"] {
+    appearance: none;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.contenedor-btn-file {
+    display: inline-block;
+    position: relative;
+    background-color: rgb(14, 231, 90);
+    color: white;
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 3%;
+
+}
+.contenedor-btn-file label{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.contenedor-btn-files input[type="file"] {
+    appearance: none;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.contenedor-btn-files {
+    display: inline-block;
+    position: relative;
+    background-color:rgb(14, 231, 90);
+    color: white;
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 3%;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+
+}
+.contenedor-btn-files label{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgb(14, 231, 90);
+    color: white;
+}
+.boton{
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    top:72%;
+    text-align: center;
+}
+.a{
+    text-align: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 1%;    
+}
+
+.body{
+    background-color: transparent;
+    border-style: dashed;
+    border-radius: 10px;
+    width: 100%;       
+    height: 14.375rem;        
+}
+.bodyS{
+    background-color: transparent;
+    border-style: dashed;
+    border-radius: 10px;
+    width: 100%;       
+    height: auto;        
+    /* display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    padding: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.bu{
+    border-radius: 50px;
+    margin-top: 50px;
+}
+.le{
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+.btnpro{
+    color: white;
+    margin-top: 30px;
+}
+.carta{
+    width: 200px;
+    height: 200px;
+}
+.cuerpo{
+    width: 200px;
+    height: 200px;
+}
+.resultados{
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.spi{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.cabe{
+    height: 65px;
+}
+.bodyss{
+    width: 100%;
+    height: auto;
+}
+.card{
+    transition: transform .2s;
+    margin: 10px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.eli{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    
+}
+.butt{
+    border-radius: 50%;
+    background-color:transparent;
+    color: red;
+    border: none;
+}
+.suspen{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.eliAll{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: none;
+}
+.cartaa{
+    width: 200px;
+    height: 300px;
+}
