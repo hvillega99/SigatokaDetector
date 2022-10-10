@@ -18,7 +18,7 @@ La interfaz permite cargar tantas imágenes como el usuario requiera para poster
 ![captura4](./images/captura4.jpg)
 
 ## Autores
-* Edwars Sabando
+* [Edwars Sabando](https://github.com/Edwars1999)
 * [Ricardo Vilcacundo](https://github.com/RicardoVilcacundo)
 * [Héctor Villegas](https://github.com/hvillega99)
 
