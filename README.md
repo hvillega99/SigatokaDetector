@@ -5,7 +5,7 @@ Sigatoka Detector es un proyecto de inteligencia artificial que tiene como objet
 La red recibe imágenes RGB de 240x240 píxeles y devuelve un valor entre 0 y 1 que corresponde a la probabalidad de que la hoja tenga sigatoka negra
 
 ## Implementación y entrenamiento de la red
-[Ver en Google Colab](https://colab.research.google.com/drive/1yi9BIJqGhPf_ylGY-LC_0qdH7dfBeT2y?usp=sharing)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yi9BIJqGhPf_ylGY-LC_0qdH7dfBeT2y?usp=sharing)
 
 ## Dataset
 [Ver en Google Drive](https://drive.google.com/drive/folders/1yibfKGpwiYDCxwEzPnXFCKimu4cJhwTT?usp=sharing)
